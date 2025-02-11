@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Tue, 29 Oct 2024 04:25:45 GMT"
+            "Tue, 21 Jan 2025 01:55:22 GMT"
           ],
           "content-type": [
             "application/json; charset=utf-8"
@@ -38,11 +38,38 @@
           "connection": [
             "keep-alive"
           ],
+          "cf-ray": [
+            "<CF-RAY>"
+          ],
+          "cf-cache-status": [
+            "DYNAMIC"
+          ],
+          "retry-after": [
+            "1"
+          ],
           "access-control-allow-origin": [
             "*"
           ],
+          "etag": [
+            "W/\"20f-kmuGXyXWtb6+6k0JVwcI/mXMmVM\""
+          ],
+          "strict-transport-security": [
+            "max-age=15552000; includeSubDomains"
+          ],
+          "x-amzn-trace-id": [
+            "ca73080b-637c-4282-9a76-9505c864b9fe-noamzn"
+          ],
+          "x-api-call-end": [
+            "2025-01-21T01:55:22.117Z"
+          ],
+          "x-api-call-start": [
+            "2025-01-21T01:55:21.874Z"
+          ],
           "x-api-received": [
-            "2024-10-29T04:25:45.156Z"
+            "2025-01-21T01:55:21.862Z"
+          ],
+          "x-inference-version": [
+            "v2"
           ],
           "x-ratelimit": [
             "false"
@@ -50,41 +77,23 @@
           "x-ratelimit-limit": [
             "10"
           ],
-          "x-ratelimit-remaining": [
-            "16"
-          ],
-          "x-ratelimit-reset": [
-            "0"
-          ],
-          "x-ratelimit-remaining-tokens": [
-            "2606"
-          ],
           "x-ratelimit-limit-tokens": [
             "3000"
           ],
-          "x-inference-version": [
-            "v2"
+          "x-ratelimit-remaining": [
+            "18"
           ],
-          "x-api-call-start": [
-            "2024-10-29T04:25:45.165Z"
+          "x-ratelimit-remaining-tokens": [
+            "2926"
           ],
-          "x-api-call-end": [
-            "2024-10-29T04:25:45.533Z"
+          "x-ratelimit-reset": [
+            "1"
           ],
-          "etag": [
-            "W/\"213-cTA3PWNqM7mDRqBreqhf2nzl0tg\""
-          ],
-          "cf-cache-status": [
-            "DYNAMIC"
-          ],
-          "strict-transport-security": [
-            "max-age=2592000; includeSubDomains"
+          "vary": [
+            "Accept-Encoding"
           ],
           "server": [
             "cloudflare"
-          ],
-          "cf-ray": [
-            "<CF-RAY>"
           ],
           "content-encoding": [
             "gzip"
@@ -95,10 +104,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\n  \"id\": \"8da067489cbe76c1-SEA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1730175945,\n  \"model\": \"meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo\",\n  \"prompt_logprobs\": null,\n  \"prompt\": [],\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"It is a picture of three balloons.\",\n        \"tool_calls\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 89,\n    \"total_tokens\": 98,\n    \"completion_tokens\": 9\n  }\n}"
+          "string": "{\n  \"id\": \"9053ae7a5f9beb7f\",\n  \"object\": \"chat.completion\",\n  \"created\": 1737424521,\n  \"model\": \"meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo\",\n  \"prompt_logprobs\": null,\n  \"prompt\": [],\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"It is a picture of three balloons.\",\n        \"tool_calls\": []\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 89,\n    \"total_tokens\": 98,\n    \"completion_tokens\": 9\n  }\n}"
         }
       },
-      "recorded_at": "Tue, 29 Oct 2024 04:25:45 GMT"
+      "recorded_at": "Tue, 21 Jan 2025 01:55:22 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

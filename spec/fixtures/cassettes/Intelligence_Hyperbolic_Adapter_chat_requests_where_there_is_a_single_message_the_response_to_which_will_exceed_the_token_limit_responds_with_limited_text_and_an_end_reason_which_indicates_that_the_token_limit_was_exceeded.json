@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Thu, 31 Oct 2024 20:56:23 GMT"
+            "Mon, 20 Jan 2025 22:21:46 GMT"
           ],
           "content-type": [
             "application/json"
@@ -53,10 +53,10 @@
         },
         "body": {
           "encoding": "ASCII-8BIT",
-          "string": "{\"id\":\"chat-4a788faa001e4d16b35a4abcf3bb24e2\",\"object\":\"chat.completion\",\"created\":1730408183,\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"one\\ntwo\\nthree\\nfour\\nfive\\nsix\\nseven\\neight\\n\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"usage\":{\"prompt_tokens\":64,\"total_tokens\":80,\"completion_tokens\":16}}"
+          "string": "{\"id\":\"chat-11bd76ef82b2471db7f589f1c18a7450\",\"object\":\"chat.completion\",\"created\":1737411705,\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"one\\ntwo\\nthree\\nfour\\nfive\\nsix\\nseven\\neight\\n\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"usage\":{\"prompt_tokens\":84,\"total_tokens\":100,\"completion_tokens\":16}}"
         }
       },
-      "recorded_at": "Thu, 31 Oct 2024 20:56:23 GMT"
+      "recorded_at": "Mon, 20 Jan 2025 22:21:46 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

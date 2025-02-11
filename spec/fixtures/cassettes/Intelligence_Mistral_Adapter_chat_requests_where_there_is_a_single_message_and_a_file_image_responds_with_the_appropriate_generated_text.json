@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Tue, 29 Oct 2024 16:39:16 GMT"
+            "Mon, 20 Jan 2025 22:26:09 GMT"
           ],
           "content-type": [
             "application/json"
@@ -38,47 +38,50 @@
           "connection": [
             "keep-alive"
           ],
-          "x-ratelimitbysize-limit-minute": [
-            "500000"
-          ],
           "x-ratelimitbysize-remaining-minute": [
-            "499240"
+            "1998519"
+          ],
+          "x-ratelimitbysize-remaining-month": [
+            "9999990081"
+          ],
+          "ratelimitbysize-remaining": [
+            "1998519"
+          ],
+          "ratelimitbysize-reset": [
+            "52"
+          ],
+          "ratelimitbysize-limit": [
+            "2000000"
+          ],
+          "x-ratelimitbysize-limit-minute": [
+            "2000000"
+          ],
+          "x-ratelimitbysize-limit-month": [
+            "10000000000"
           ],
           "ratelimitbysize-query-cost": [
             "71"
           ],
-          "ratelimitbysize-limit": [
-            "500000"
-          ],
-          "x-ratelimitbysize-limit-day": [
-            "150000000"
-          ],
-          "x-ratelimitbysize-remaining-day": [
-            "149975125"
-          ],
-          "ratelimitbysize-reset": [
-            "45"
-          ],
-          "ratelimitbysize-remaining": [
-            "499240"
-          ],
           "x-envoy-upstream-service-time": [
-            "1042"
+            "1315"
           ],
           "access-control-allow-origin": [
             "*"
           ],
           "x-kong-upstream-latency": [
-            "1043"
+            "1316"
           ],
           "x-kong-proxy-latency": [
             "1"
           ],
           "x-kong-request-id": [
-            "563e831ab2af571cdb4c092aa7fed754"
+            "18780d591592b57ed00c8255460ef55a"
           ],
           "cf-cache-status": [
             "DYNAMIC"
+          ],
+          "set-cookie": [
+            "<SET-COOKIE>"
           ],
           "server": [
             "cloudflare"
@@ -95,10 +98,10 @@
         },
         "body": {
           "encoding": "ASCII-8BIT",
-          "string": "{\"id\":\"f1e000c608af42ed8f1bbcf14226c3c0\",\"object\":\"chat.completion\",\"created\":1730219956,\"model\":\"pixtral-12b-2409\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"red balloon\",\"tool_calls\":null},\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":326,\"total_tokens\":328,\"completion_tokens\":2}}"
+          "string": "{\"id\":\"3afadb137693473294f14b7e9d41a6f7\",\"object\":\"chat.completion\",\"created\":1737411969,\"model\":\"pixtral-12b-2409\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"tool_calls\":null,\"content\":\"balloon\"},\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":326,\"total_tokens\":328,\"completion_tokens\":2}}"
         }
       },
-      "recorded_at": "Tue, 29 Oct 2024 16:39:16 GMT"
+      "recorded_at": "Mon, 20 Jan 2025 22:26:09 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

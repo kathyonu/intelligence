@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Wed, 30 Oct 2024 17:22:01 GMT"
+            "Mon, 20 Jan 2025 22:17:10 GMT"
           ],
           "content-type": [
             "text/event-stream; charset=utf-8"
@@ -45,7 +45,7 @@
             "<OPENAI-ORGANIZATION>"
           ],
           "openai-processing-ms": [
-            "646"
+            "475"
           ],
           "openai-version": [
             "2020-10-01"
@@ -95,10 +95,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "data: {\"id\":\"chatcmpl-AO6gLmTN4rkXL42uMKCqr3md0Kkeo\",\"object\":\"chat.completion.chunk\",\"created\":1730308921,\"model\":\"gpt-4o-2024-08-06\",\"system_fingerprint\":\"fp_90354628f2\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":null,\"tool_calls\":[{\"index\":0,\"id\":\"call_AwwOYRVuYWyYFgr9T57LCpgt\",\"type\":\"function\",\"function\":{\"name\":\"get_location\",\"arguments\":\"\"}}],\"refusal\":null},\"logprobs\":null,\"finish_reason\":null}],\"usage\":null}\n\ndata: {\"id\":\"chatcmpl-AO6gLmTN4rkXL42uMKCqr3md0Kkeo\",\"object\":\"chat.completion.chunk\",\"created\":1730308921,\"model\":\"gpt-4o-2024-08-06\",\"system_fingerprint\":\"fp_90354628f2\",\"choices\":[{\"index\":0,\"delta\":{\"tool_calls\":[{\"index\":0,\"function\":{\"arguments\":\"{}\"}}]},\"logprobs\":null,\"finish_reason\":null}],\"usage\":null}\n\ndata: {\"id\":\"chatcmpl-AO6gLmTN4rkXL42uMKCqr3md0Kkeo\",\"object\":\"chat.completion.chunk\",\"created\":1730308921,\"model\":\"gpt-4o-2024-08-06\",\"system_fingerprint\":\"fp_90354628f2\",\"choices\":[{\"index\":0,\"delta\":{},\"logprobs\":null,\"finish_reason\":\"tool_calls\"}],\"usage\":null}\n\ndata: {\"id\":\"chatcmpl-AO6gLmTN4rkXL42uMKCqr3md0Kkeo\",\"object\":\"chat.completion.chunk\",\"created\":1730308921,\"model\":\"gpt-4o-2024-08-06\",\"system_fingerprint\":\"fp_90354628f2\",\"choices\":[],\"usage\":{\"prompt_tokens\":215,\"completion_tokens\":10,\"total_tokens\":225,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":0}}}\n\ndata: [DONE]\n\n"
+          "string": "data: {\"id\":\"chatcmpl-AruMw3LF2029rhiQUMVblqr2jM4Dj\",\"object\":\"chat.completion.chunk\",\"created\":1737411430,\"model\":\"gpt-4o-2024-08-06\",\"service_tier\":\"default\",\"system_fingerprint\":\"fp_50cad350e4\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":null,\"tool_calls\":[{\"index\":0,\"id\":\"call_Rj4Zu16thlyRQ4eWHTYZcHGE\",\"type\":\"function\",\"function\":{\"name\":\"get_location\",\"arguments\":\"\"}}],\"refusal\":null},\"logprobs\":null,\"finish_reason\":null}],\"usage\":null}\n\ndata: {\"id\":\"chatcmpl-AruMw3LF2029rhiQUMVblqr2jM4Dj\",\"object\":\"chat.completion.chunk\",\"created\":1737411430,\"model\":\"gpt-4o-2024-08-06\",\"service_tier\":\"default\",\"system_fingerprint\":\"fp_50cad350e4\",\"choices\":[{\"index\":0,\"delta\":{\"tool_calls\":[{\"index\":0,\"function\":{\"arguments\":\"{}\"}}]},\"logprobs\":null,\"finish_reason\":null}],\"usage\":null}\n\ndata: {\"id\":\"chatcmpl-AruMw3LF2029rhiQUMVblqr2jM4Dj\",\"object\":\"chat.completion.chunk\",\"created\":1737411430,\"model\":\"gpt-4o-2024-08-06\",\"service_tier\":\"default\",\"system_fingerprint\":\"fp_50cad350e4\",\"choices\":[{\"index\":0,\"delta\":{},\"logprobs\":null,\"finish_reason\":\"tool_calls\"}],\"usage\":null}\n\ndata: {\"id\":\"chatcmpl-AruMw3LF2029rhiQUMVblqr2jM4Dj\",\"object\":\"chat.completion.chunk\",\"created\":1737411430,\"model\":\"gpt-4o-2024-08-06\",\"service_tier\":\"default\",\"system_fingerprint\":\"fp_50cad350e4\",\"choices\":[],\"usage\":{\"prompt_tokens\":215,\"completion_tokens\":10,\"total_tokens\":225,\"prompt_tokens_details\":{\"cached_tokens\":0,\"audio_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"audio_tokens\":0,\"accepted_prediction_tokens\":0,\"rejected_prediction_tokens\":0}}}\n\ndata: [DONE]\n\n"
         }
       },
-      "recorded_at": "Wed, 30 Oct 2024 17:22:01 GMT"
+      "recorded_at": "Mon, 20 Jan 2025 22:17:10 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

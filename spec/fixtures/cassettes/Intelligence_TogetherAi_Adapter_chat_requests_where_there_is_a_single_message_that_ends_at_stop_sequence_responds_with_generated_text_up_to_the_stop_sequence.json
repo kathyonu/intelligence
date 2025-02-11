@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Tue, 29 Oct 2024 04:25:41 GMT"
+            "Tue, 21 Jan 2025 01:55:19 GMT"
           ],
           "content-type": [
             "application/json; charset=utf-8"
@@ -38,53 +38,62 @@
           "connection": [
             "keep-alive"
           ],
+          "cf-ray": [
+            "<CF-RAY>"
+          ],
+          "cf-cache-status": [
+            "DYNAMIC"
+          ],
+          "retry-after": [
+            "2"
+          ],
           "access-control-allow-origin": [
             "*"
           ],
+          "etag": [
+            "W/\"20a-ugRDma3VmIith6iiZz+oJ4eN3iM\""
+          ],
+          "strict-transport-security": [
+            "max-age=15552000; includeSubDomains"
+          ],
+          "x-amzn-trace-id": [
+            "beeb7c87-3836-48ce-9659-1e88c97bcbd8-noamzn"
+          ],
+          "x-api-call-end": [
+            "2025-01-21T01:55:19.660Z"
+          ],
+          "x-api-call-start": [
+            "2025-01-21T01:55:19.541Z"
+          ],
           "x-api-received": [
-            "2024-10-29T04:25:40.699Z"
+            "2025-01-21T01:55:19.428Z"
+          ],
+          "x-inference-version": [
+            "v2"
           ],
           "x-ratelimit": [
             "false"
           ],
           "x-ratelimit-limit": [
-            "10"
-          ],
-          "x-ratelimit-remaining": [
-            "18"
-          ],
-          "x-ratelimit-reset": [
-            "1"
-          ],
-          "x-ratelimit-remaining-tokens": [
-            "2749"
+            "30"
           ],
           "x-ratelimit-limit-tokens": [
             "3000"
           ],
-          "x-inference-version": [
-            "v2"
+          "x-ratelimit-remaining": [
+            "59"
           ],
-          "x-api-call-start": [
-            "2024-10-29T04:25:40.707Z"
+          "x-ratelimit-remaining-tokens": [
+            "3000"
           ],
-          "x-api-call-end": [
-            "2024-10-29T04:25:41.053Z"
+          "x-ratelimit-reset": [
+            "2"
           ],
-          "etag": [
-            "W/\"20f-7a9gY3CEvOIKGbgIomKbbj7mM3k\""
-          ],
-          "cf-cache-status": [
-            "DYNAMIC"
-          ],
-          "strict-transport-security": [
-            "max-age=2592000; includeSubDomains"
+          "vary": [
+            "Accept-Encoding"
           ],
           "server": [
             "cloudflare"
-          ],
-          "cf-ray": [
-            "<CF-RAY>"
           ],
           "content-encoding": [
             "gzip"
@@ -95,10 +104,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\n  \"id\": \"8da0672d4c46769c-SEA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1730175940,\n  \"model\": \"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\n  \"prompt\": [],\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"seed\": 11119418696361610000,\n      \"logprobs\": null,\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"one\\ntwo\\nthree\\nfour\\n\",\n        \"tool_calls\": []\n      }\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 85,\n    \"completion_tokens\": 9,\n    \"total_tokens\": 94\n  }\n}"
+          "string": "{\n  \"id\": \"9053ae6e1b3e936c\",\n  \"object\": \"chat.completion\",\n  \"created\": 1737424519,\n  \"model\": \"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\n  \"prompt\": [],\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"seed\": 5650495337746743000,\n      \"logprobs\": null,\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"one\\ntwo\\nthree\\nfour\\n\",\n        \"tool_calls\": []\n      }\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 84,\n    \"completion_tokens\": 9,\n    \"total_tokens\": 93\n  }\n}"
         }
       },
-      "recorded_at": "Tue, 29 Oct 2024 04:25:41 GMT"
+      "recorded_at": "Tue, 21 Jan 2025 01:55:19 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

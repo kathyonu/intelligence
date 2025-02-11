@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Thu, 31 Oct 2024 22:30:14 GMT"
+            "Tue, 21 Jan 2025 01:55:15 GMT"
           ],
           "content-type": [
             "application/json; charset=utf-8"
@@ -38,53 +38,62 @@
           "connection": [
             "keep-alive"
           ],
+          "cf-ray": [
+            "<CF-RAY>"
+          ],
+          "cf-cache-status": [
+            "DYNAMIC"
+          ],
+          "retry-after": [
+            "1"
+          ],
           "access-control-allow-origin": [
             "*"
           ],
+          "etag": [
+            "W/\"1f8-e5c4EJv6X+5+9+oosvIZPG8L+KY\""
+          ],
+          "strict-transport-security": [
+            "max-age=15552000; includeSubDomains"
+          ],
+          "x-amzn-trace-id": [
+            "d100e47c-33f3-4a8c-b657-86571377a458-noamzn"
+          ],
+          "x-api-call-end": [
+            "2025-01-21T01:55:15.516Z"
+          ],
+          "x-api-call-start": [
+            "2025-01-21T01:55:15.391Z"
+          ],
           "x-api-received": [
-            "2024-10-31T22:30:13.865Z"
+            "2025-01-21T01:55:15.378Z"
+          ],
+          "x-inference-version": [
+            "v2"
           ],
           "x-ratelimit": [
             "false"
           ],
           "x-ratelimit-limit": [
-            "10"
-          ],
-          "x-ratelimit-remaining": [
-            "17"
-          ],
-          "x-ratelimit-reset": [
-            "1"
-          ],
-          "x-ratelimit-remaining-tokens": [
-            "3000"
+            "30"
           ],
           "x-ratelimit-limit-tokens": [
             "3000"
           ],
-          "x-inference-version": [
-            "v2"
+          "x-ratelimit-remaining": [
+            "57"
           ],
-          "x-api-call-start": [
-            "2024-10-31T22:30:13.875Z"
+          "x-ratelimit-remaining-tokens": [
+            "3000"
           ],
-          "x-api-call-end": [
-            "2024-10-31T22:30:14.113Z"
+          "x-ratelimit-reset": [
+            "1"
           ],
-          "etag": [
-            "W/\"1fc-fVwUuwieOSOQDSUT7Cipy6xfZdc\""
-          ],
-          "cf-cache-status": [
-            "DYNAMIC"
-          ],
-          "strict-transport-security": [
-            "max-age=2592000; includeSubDomains"
+          "vary": [
+            "Accept-Encoding"
           ],
           "server": [
             "cloudflare"
-          ],
-          "cf-ray": [
-            "<CF-RAY>"
           ],
           "content-encoding": [
             "gzip"
@@ -95,10 +104,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\n  \"id\": \"8db716a09c5975c4-SEA\",\n  \"object\": \"chat.completion\",\n  \"created\": 1730413813,\n  \"model\": \"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\n  \"prompt\": [],\n  \"choices\": [\n    {\n      \"finish_reason\": \"eos\",\n      \"seed\": 14441051706849307000,\n      \"logprobs\": null,\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"hello\",\n        \"tool_calls\": []\n      }\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 79,\n    \"completion_tokens\": 2,\n    \"total_tokens\": 81\n  }\n}"
+          "string": "{\n  \"id\": \"9053ae53fde93076\",\n  \"object\": \"chat.completion\",\n  \"created\": 1737424515,\n  \"model\": \"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\n  \"prompt\": [],\n  \"choices\": [\n    {\n      \"finish_reason\": \"eos\",\n      \"seed\": 16380908294369004000,\n      \"logprobs\": null,\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"hello\",\n        \"tool_calls\": []\n      }\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 78,\n    \"completion_tokens\": 2,\n    \"total_tokens\": 80\n  }\n}"
         }
       },
-      "recorded_at": "Thu, 31 Oct 2024 22:30:14 GMT"
+      "recorded_at": "Tue, 21 Jan 2025 01:55:15 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

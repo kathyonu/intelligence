@@ -6,7 +6,7 @@
         "uri": "https://api.mistral.ai/v1/chat/completions",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"model\":\"mistral-large-latest\",\"max_tokens\":48,\"temperature\":0.0,\"messages\":[{\"role\":\"system\",\"content\":\"\\n            You are integrated into a test platform. It is very important that you answer \\n            succinctly and always provide the text in the requested format without any additional \\n            text. \\n          \"},{\"role\":\"user\",\"content\":\"count to twenty in words, all lower case, one word per line\\n\"}]}"
+          "string": "{\"model\":\"mistral-large-latest\",\"max_tokens\":24,\"temperature\":0.0,\"messages\":[{\"role\":\"system\",\"content\":\"\\n            You are integrated into a test platform. It is very important that you answer \\n            succinctly and always provide the text in the requested format without any additional \\n            text. \\n          \"},{\"role\":\"user\",\"content\":\"count to twenty in words, all lower case, one word per line\\n\"}]}"
         },
         "headers": {
           "User-Agent": [
@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Tue, 29 Oct 2024 16:38:44 GMT"
+            "Mon, 20 Jan 2025 22:26:02 GMT"
           ],
           "content-type": [
             "application/json"
@@ -38,47 +38,50 @@
           "connection": [
             "keep-alive"
           ],
-          "ratelimitbysize-reset": [
-            "19"
-          ],
-          "ratelimitbysize-limit": [
-            "500000"
-          ],
           "x-ratelimitbysize-limit-minute": [
-            "500000"
+            "2000000"
+          ],
+          "x-ratelimitbysize-limit-month": [
+            "10000000000"
+          ],
+          "x-ratelimitbysize-remaining-month": [
+            "9999990851"
+          ],
+          "ratelimitbysize-reset": [
+            "59"
           ],
           "x-ratelimitbysize-remaining-minute": [
-            "499685"
-          ],
-          "ratelimitbysize-remaining": [
-            "499685"
-          ],
-          "x-ratelimitbysize-limit-day": [
-            "150000000"
-          ],
-          "x-ratelimitbysize-remaining-day": [
-            "149975727"
+            "1999204"
           ],
           "ratelimitbysize-query-cost": [
-            "104"
+            "80"
+          ],
+          "ratelimitbysize-limit": [
+            "2000000"
+          ],
+          "ratelimitbysize-remaining": [
+            "1999204"
           ],
           "x-envoy-upstream-service-time": [
-            "2507"
+            "804"
           ],
           "access-control-allow-origin": [
             "*"
           ],
           "x-kong-upstream-latency": [
-            "2507"
+            "805"
           ],
           "x-kong-proxy-latency": [
             "1"
           ],
           "x-kong-request-id": [
-            "5f80814c9f9a7f597002e532adb5552d"
+            "0471280c5f259e6ea9ca6f0646156419"
           ],
           "cf-cache-status": [
             "DYNAMIC"
+          ],
+          "set-cookie": [
+            "<SET-COOKIE>"
           ],
           "server": [
             "cloudflare"
@@ -95,10 +98,10 @@
         },
         "body": {
           "encoding": "ASCII-8BIT",
-          "string": "{\"id\":\"229dae0daa904290be64ca194ef981c2\",\"object\":\"chat.completion\",\"created\":1730219921,\"model\":\"mistral-large-latest\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"one\\ntwo\\nthree\\nfour\\nfive\\nsix\\nseven\\neight\\nnine\\nten\\neleven\\ntwelve\\nthirteen\\nfourteen\\nfifteen\\nsixteen\\nseventeen\\neighteen\\nnin\",\"tool_calls\":null},\"finish_reason\":\"length\"}],\"usage\":{\"prompt_tokens\":60,\"total_tokens\":108,\"completion_tokens\":48}}"
+          "string": "{\"id\":\"b044b6fe370a48d2ad90fdd697b13bb0\",\"object\":\"chat.completion\",\"created\":1737411961,\"model\":\"mistral-large-latest\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"tool_calls\":null,\"content\":\"one\\ntwo\\nthree\\nfour\\nfive\\nsix\\nseven\\neight\\nnine\\nten\\neleven\\n\"},\"finish_reason\":\"length\"}],\"usage\":{\"prompt_tokens\":60,\"total_tokens\":84,\"completion_tokens\":24}}"
         }
       },
-      "recorded_at": "Tue, 29 Oct 2024 16:38:44 GMT"
+      "recorded_at": "Mon, 20 Jan 2025 22:26:02 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

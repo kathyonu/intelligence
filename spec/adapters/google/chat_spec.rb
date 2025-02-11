@@ -12,9 +12,26 @@ RSpec.describe "#{Intelligence::Adapter[ :google ]} chat requests", :google do
     Intelligence::Adapter[ :google ].build! do   
       key                     ENV[ 'GOOGLE_API_KEY' ]
       chat_options do
-        model                 'gemini-1.5-pro-002'
+        model                 'gemini-1.5-pro'
         max_tokens            64 
         temperature           0
+      end
+    end
+  end
+
+  let( :adapter_with_tool ) do
+    Intelligence::Adapter[ :google ].build! do   
+      key                     ENV[ 'GOOGLE_API_KEY' ]
+      chat_options do
+        model                 'gemini-1.5-pro'
+        max_tokens            64 
+        temperature           0
+
+        tool do     
+          name :get_location 
+          description \
+            "The get_location tool will return the users city, state or province and country."
+        end
       end
     end
   end
@@ -23,7 +40,7 @@ RSpec.describe "#{Intelligence::Adapter[ :google ]} chat requests", :google do
     Intelligence::Adapter[ :google ].build! do   
       key                     ENV[ 'GOOGLE_API_KEY' ]
       chat_options do
-        model                 'gemini-1.5-pro-002'
+        model                 'gemini-1.5-pro'
         max_tokens            16 
         temperature           0
       end
@@ -34,7 +51,7 @@ RSpec.describe "#{Intelligence::Adapter[ :google ]} chat requests", :google do
     Intelligence::Adapter[ :google ].build! do   
       key                     ENV[ 'GOOGLE_API_KEY' ]
       chat_options do
-        model                 'gemini-1.5-pro-002'
+        model                 'gemini-1.5-pro'
         max_tokens            32 
         temperature           0
       end
@@ -45,7 +62,7 @@ RSpec.describe "#{Intelligence::Adapter[ :google ]} chat requests", :google do
     Intelligence::Adapter[ :google ].build! do   
       key                     ENV[ 'GOOGLE_API_KEY' ]
       chat_options do
-        model                 'gemini-1.5-pro-002'
+        model                 'gemini-1.5-pro'
         max_tokens            16
         temperature           0
         stop                  'five'
@@ -57,7 +74,7 @@ RSpec.describe "#{Intelligence::Adapter[ :google ]} chat requests", :google do
     Intelligence::Adapter[ :google ].build! do   
       key                     ENV[ 'GOOGLE_API_KEY' ]
       chat_options do
-        model                 'gemini-1.5-pro-002'
+        model                 'gemini-1.5-pro'
         max_tokens            32
         temperature           0
       end
@@ -68,7 +85,7 @@ RSpec.describe "#{Intelligence::Adapter[ :google ]} chat requests", :google do
     Intelligence::Adapter[ :google ].build! do 
       key                     'this-key-is-not-valid'  
       chat_options do
-        model                 'gemini-1.5-pro-002'
+        model                 'gemini-1.5-pro'
         max_tokens            16
         temperature           0
       end
@@ -95,9 +112,9 @@ RSpec.describe "#{Intelligence::Adapter[ :google ]} chat requests", :google do
   include_examples 'chat requests with binary encoded images'
   include_examples 'chat requests with binary encoded text'
   include_examples 'chat requests with binary encoded pdf'
-  # google is periodically failing this test
   include_examples 'chat requests with binary encoded audio'
   include_examples 'chat requests with tools'
+  include_examples 'chat requests with adapter tools'
   include_examples 'chat requests with parallel tools'
   # google is failing this test
   # include_examples 'chat requests with complex tools'

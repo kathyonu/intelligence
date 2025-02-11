@@ -6,7 +6,7 @@
         "uri": "https://api.together.xyz/v1/chat/completions",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\"max_tokens\":16.0,\"temperature\":0.0,\"stream\":true,\"messages\":[{\"role\":\"system\",\"content\":\"\\n            You are integrated into a test platform. It is very important that you answer \\n            succinctly and always provide the text in the requested format without any additional \\n            text. \\n          \"},{\"role\":\"user\",\"content\":\"this is a test, respond with 'test'\\n\"},{\"role\":\"assistant\",\"content\":\"test\\n\"},{\"role\":\"user\",\"content\":\"hello!\\n\"},{\"role\":\"user\",\"content\":\"what was the previous user message?\\n\"}]}"
+          "string": "{\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\"max_tokens\":128.0,\"temperature\":0.0,\"stream\":true,\"messages\":[{\"role\":\"system\",\"content\":\"\\n            You are integrated into a test platform. It is very important that you answer \\n            succinctly and always provide the text in the requested format without any additional \\n            text. \\n          \"},{\"role\":\"user\",\"content\":\"the secret word is 'blue'\\n\"},{\"role\":\"assistant\",\"content\":\"ok\\n\"},{\"role\":\"user\",\"content\":\"the secret word has been changed to 'red'!\\n\"},{\"role\":\"user\",\"content\":\"what is the secret word?\\n\"}]}"
         },
         "headers": {
           "User-Agent": [
@@ -27,7 +27,7 @@
         },
         "headers": {
           "date": [
-            "Wed, 30 Oct 2024 18:45:22 GMT"
+            "Tue, 21 Jan 2025 01:55:27 GMT"
           ],
           "content-type": [
             "text/event-stream;charset=utf-8"
@@ -38,50 +38,59 @@
           "connection": [
             "keep-alive"
           ],
+          "cf-ray": [
+            "<CF-RAY>"
+          ],
+          "cf-cache-status": [
+            "DYNAMIC"
+          ],
+          "retry-after": [
+            "1"
+          ],
           "access-control-allow-origin": [
             "*"
           ],
+          "cache-control": [
+            "no-cache, no-transform"
+          ],
+          "strict-transport-security": [
+            "max-age=15552000; includeSubDomains"
+          ],
+          "x-amzn-trace-id": [
+            "54be49f4-de00-49ec-9c9c-fc394f2ccac8-noamzn"
+          ],
+          "x-api-call-start": [
+            "2025-01-21T01:55:27.712Z"
+          ],
           "x-api-received": [
-            "2024-10-30T18:45:22.137Z"
+            "2025-01-21T01:55:27.699Z"
+          ],
+          "x-inference-version": [
+            "v2"
           ],
           "x-ratelimit": [
             "false"
           ],
           "x-ratelimit-limit": [
-            "10"
-          ],
-          "x-ratelimit-remaining": [
-            "17"
-          ],
-          "x-ratelimit-reset": [
-            "1"
-          ],
-          "x-ratelimit-remaining-tokens": [
-            "2645"
+            "30"
           ],
           "x-ratelimit-limit-tokens": [
             "3000"
           ],
-          "x-inference-version": [
-            "v2"
+          "x-ratelimit-remaining": [
+            "56"
           ],
-          "x-api-call-start": [
-            "2024-10-30T18:45:22.145Z"
+          "x-ratelimit-remaining-tokens": [
+            "3000"
           ],
-          "cache-control": [
-            "no-cache, no-transform"
+          "x-ratelimit-reset": [
+            "1"
           ],
-          "cf-cache-status": [
-            "DYNAMIC"
-          ],
-          "strict-transport-security": [
-            "max-age=2592000; includeSubDomains"
+          "vary": [
+            "Accept-Encoding"
           ],
           "server": [
             "cloudflare"
-          ],
-          "cf-ray": [
-            "<CF-RAY>"
           ],
           "alt-svc": [
             "h3=\":443\"; ma=86400"
@@ -89,10 +98,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "data: {\"id\":\"8dad8fdd38f2ba0e-SEA\",\"object\":\"chat.completion.chunk\",\"created\":1730313922,\"choices\":[{\"index\":0,\"text\":\"hello\",\"logprobs\":null,\"finish_reason\":null,\"seed\":null,\"delta\":{\"token_id\":15339,\"role\":\"assistant\",\"content\":\"hello\",\"tool_calls\":null}}],\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\"usage\":null}\n\ndata: {\"id\":\"8dad8fdd38f2ba0e-SEA\",\"object\":\"chat.completion.chunk\",\"created\":1730313922,\"choices\":[{\"index\":0,\"text\":\"!\",\"logprobs\":null,\"finish_reason\":null,\"seed\":null,\"delta\":{\"token_id\":null,\"role\":\"assistant\",\"content\":\"!\",\"tool_calls\":null}}],\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\"usage\":null}\n\ndata: {\"id\":\"8dad8fdd38f2ba0e-SEA\",\"object\":\"chat.completion.chunk\",\"created\":1730313922,\"choices\":[{\"index\":0,\"text\":\"\",\"logprobs\":null,\"finish_reason\":\"eos\",\"seed\":10640359125296710000,\"delta\":{\"token_id\":128009,\"role\":\"assistant\",\"content\":\"\",\"tool_calls\":null}}],\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\"usage\":{\"prompt_tokens\":106,\"completion_tokens\":3,\"total_tokens\":109}}\n\ndata: [DONE]\n\n"
+          "string": "data: {\"id\":\"9053aea0ed15a336\",\"object\":\"chat.completion.chunk\",\"created\":1737424527,\"choices\":[{\"index\":0,\"text\":\"red\",\"logprobs\":null,\"finish_reason\":null,\"seed\":null,\"delta\":{\"token_id\":1171,\"role\":\"assistant\",\"content\":\"red\",\"tool_calls\":null}}],\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\"usage\":null}\n\ndata: {\"id\":\"9053aea0ed15a336\",\"object\":\"chat.completion.chunk\",\"created\":1737424527,\"choices\":[{\"index\":0,\"text\":\"\",\"logprobs\":null,\"finish_reason\":\"eos\",\"seed\":13223267690755084000,\"delta\":{\"token_id\":128009,\"role\":\"assistant\",\"content\":\"\",\"tool_calls\":null}}],\"model\":\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\"usage\":{\"prompt_tokens\":110,\"completion_tokens\":2,\"total_tokens\":112}}\n\ndata: [DONE]\n\n"
         }
       },
-      "recorded_at": "Wed, 30 Oct 2024 18:45:22 GMT"
+      "recorded_at": "Tue, 21 Jan 2025 01:55:27 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"
